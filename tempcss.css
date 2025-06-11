@@ -321,81 +321,14 @@ img {
     }
 }
 
-        .services {
-           
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .services h2 {
-            color: #046c21;
-            font-size: 28px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .services h1 {
-            font-size: 36px;
-            color: #046c21;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        /* Service Cards Container */
-        .service-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
-
-        /* Individual Service Card */
-        .service-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            width: 415px;
-         margin: 0;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Service Icons */
-        .service-card i {
-            font-size: 40px;
-            color: white;
-            background: #046c21;
-            padding: 15px;
-            border-radius: 50%;
-        }
-
-        /* Service Title */
-        .service-card h3 {
-            margin-top: 15px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        /* Service Description */
-        .service-card p {
-            font-size: 14px;
-            color: #666;
-            margin-top: 10px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .service-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+      .service-icon {
+      font-size: 2rem;
+      background-color: #046c21;
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+      display: inline-block;
+    }
      .footer {
       background: #044D2E;
       color: white;
