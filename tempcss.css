@@ -3,7 +3,9 @@
     *, *::before, *::after { box-sizing: border-box; }
 
     body { font-family: 'Open Sans', sans-serif; }
-
+*{
+    border: 0.5px solid#000;
+}
  .navbar-brand img {
   height: 40px;
   width: auto;
