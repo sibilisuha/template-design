@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RouteX Navigation</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RouteX Navigation</title>
+
+  <!-- ✅ Bootstrap CSS FIRST -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
     <link rel="stylesheet" href="tempcss.css">
    
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+      <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-     <!-- Add this in the <head> of your HTML -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <nav class="navbar">
-        <div class="container">
-            <div class="logo">
+ <body>
+ 
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="logo.jpeg"
                 alt="RouteX Logo">
-                    <!-- Replace with your logo -->
-                <span>RouteX</span></div></div>
+                   <span class="fw-bold">RouteX</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-            <ul class="nav-links">
-                <li><a href="#">HOME ▼</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li>
-                    <a href="#">STORY ▼</a>
-                    <div class="dropdown">
-                        <a href="#">Success Stories</a>
-                        <a href="#">Our Team</a>
-                    </div>
-                </li>
-                <li><a href="#">VISA ▼</a></li>
-                <li><a href="#">BLOG ▼</a></li>
-                <li><a href="#">PAGE ▼</a></li>
-                <li><a href="#">CONTACT</a></li>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown">STORY</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Success Stories</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
             </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">VISA</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">PAGE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+        </ul>
+        <div class="help-section ms-lg-3 text-muted d-none d-lg-block">
+          Need help? <strong>(307) 555-0133</strong>
         </div>
-
-        <div class="help-section">
-             Need help? <strong>(307) 555-0133</strong>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
     <section class="hero">
         <div class="hero-text">
@@ -50,72 +67,54 @@
             <a href="#" class="btn">Learn More →</a>
         </div>
     </section>
-    <section class="about-section-two">
-        <div class="about2-pattrn1 bounce-y"></div>
-        <div class="auto-container">
-            <div class="outer-box">
-                <div class="row">
-                    <div class="image-column col-lg-6">
-                        <div class="inner-column">
-                            <div class="image-box">
-                               
-                                <div class="row g-0">
-                                    <div class="col-sm-6">
-                                        <figure class="image-one mb-0"><a href="page-about.html"><img src="t1.jpg" alt="Image"></a></figure>
-                                        <figure class="image-one mb-0"style="padding: 10px;"><a href="page-about.html"><img src="https://github.com/sibilisuha/template-design/blob/main/t2.jpg?raw=true" alt="Image"></a></figure>
-                                        
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <figure class="image-two" style="padding: 10px;"><a href="page-about.html"><img src="t3.jpg" alt="Image"></a></figure>
-                                        <figure class="image-two mb-0"><a href="page-about.html"><img src="t4.jpg" alt="Image"></a></figure>
-                                         
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-column col-lg-6">
-                        <div class="inner-column">
-                            <div class="sec-title mb-0">
-                                <span class="sub-title">ABOUT US</span>
-                                <h2 class="words-slide-up"><b>Unknown Wanderlust<br>Your Journey into</b></h2>
-                                <div class="text">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante .<br><br><br></div>
-                            </div>
-
-
-                     <!-- Features -->
-                <div class="features">
-                    <div class="feature-item">
-                        <span class="check-icon"></span>
-                        <div>
-                            <h4>Safety Guides</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modi atque.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="check-icon"></span>
-                        <div>
-                            <h4>Passport Assistance</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatibus.</p>
-                        </div>
-                    </div>
-                </div>
-        
-                
-                          
-                            <div class="author-box">
-                                <div class="inner">
-                                    <a href="page-about.html" class="theme-btn btn-style-two btn pricing-btn"><span class="btn-title">Know More</span></a>
-                                   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="about-section-two py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image Column -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="t1.jpg" class="img-fluid rounded w-100" alt="Image 1">
+          </div>
+          <div class="col-6">
+            <img src="https://github.com/sibilisuha/template-design/blob/main/t2.jpg?raw=true" class="img-fluid rounded w-100" alt="Image 2">
+          </div>
+          <div class="col-6">
+            <img src="t3.jpg" class="img-fluid rounded w-100" alt="Image 3">
+          </div>
+          <div class="col-6">
+            <img src="t4.jpg" class="img-fluid rounded w-100" alt="Image 4">
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-lg-6">
+        <div class="sec-title mb-3">
+          <span class="sub-title">ABOUT US</span>
+          <h2><strong>Unknown Wanderlust<br>Your Journey into</strong></h2>
+          <p class="mb-4">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante.</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <h5>Safety Guides</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modi atque.</p>
+          </div>
+          <div class="col-md-6">
+            <h5>Passport Assistance</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatibus.</p>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <a href="page-about.html" class="btn btn-success">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section class="services">
         <h2>OUR SERVICES </h2>
         <h1>Adventure Unleashed <br> Discover Your Next</h1>
